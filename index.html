@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="img/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Formulário</title>
+  </head>
+  <body>
+    <div id="mensagemSucesso">
+      <p class="iconeSucesso">
+        <img src="img/icon-success-check.svg" alt="icone" />Mensagem enviada!
+      </p>
+      <span>
+        Obrigado por preencher o formulário. Entraremos em contato em breve!
+      </span>
+    </div>
+    <main>
+      <form>
+        <h1>Contate-nos</h1>
+        <div class="nomes">
+          <div class="nome">
+            <p>Nome <span>*</span></p>
+            <input class="inputs" type="text" id="nome" />
+            <span id="nomeErro">Preencha esse campo</span>
+          </div>
+          <div class="sobrenome">
+            <p>Sobrenome <span>*</span></p>
+            <input class="inputs" type="text" id="sobrenome" />
+            <span id="sobrenomeErro">Preencha esse campo</span>
+          </div>
+        </div>
+        <div class="email">
+          <p>Email <span>*</span></p>
+          <input class="inputs" type="email" id="email" />
+          <span id="emailErro">Preencha esse campo</span>
+          <span id="email-invalido"></span>
+        </div>
+        <p class="tipo">Tipo de consulta <span>*</span></p>
+        <div class="selecao">
+          <label for="geral" class="geral">
+            <input type="radio" name="consulta" id="geral" />
+            <label for="geral">Consulta Geral</label>
+          </label>
+          <label for="suporte" class="suporte">
+            <input type="radio" name="consulta" id="suporte" />
+            <label for="suporte">Solicitação de Suporte</label>
+          </label>
+        </div>
+        <span id="selecaoErro">Por favor selecione um tipo de consulta</span>
+        <div>
+          <p class="tipo">Mensagem <span>*</span></p>
+          <textarea id="mensagem"></textarea>
+          <span id="mensagemErro">Preencha esse campo</span>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox"
+            >Eu aceito ser contatado pela equipe <span>*</span></label
+          >
+        </div>
+        <span id="checkboxErro">
+          Para submeter este formulário, por favor aceite ser contactado
+        </span>
+        <input type="submit" value="Enviar" id="btn" />
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

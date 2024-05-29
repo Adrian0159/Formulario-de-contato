@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: #dff1e7;
+  padding: 32px 0;
+}
+
+#mensagemSucesso {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #2b4246;
+  color: #ffffff;
+  border-radius: 8px;
+  display: none;
+}
+
+.iconeSucesso img {
+  width: 18px;
+  margin-right: 10px;
+}
+
+#mensagemSucesso span {
+  font-size: 14px;
+  color: #d1d5d3;
+}
+
+.iconeSucesso {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+form {
+  max-width: 768px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 24px 32px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.nomes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.email {
+  margin-bottom: 20px;
+}
+
+.nomes p,
+.email p {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #2b4246;
+}
+
+.nome,
+.sobrenome {
+  width: 48.5%;
+}
+
+.inputs {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1.7px solid #87a3a6;
+  border-radius: 8px;
+}
+
+.inputs:hover {
+  cursor: pointer;
+  border: 1.7px solid #0c7d69;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border: 1.7px solid #0c7d69;
+}
+
+.selecao {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.tipo {
+  font-weight: 600;
+  color: #2b4246;
+  margin-top: 24px;
+}
+
+.geral,
+.suporte {
+  display: flex;
+  align-items: center;
+  border: 1.7px solid #87a3a6;
+  width: 48.5%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #2b4246;
+  cursor: pointer;
+}
+
+.geral label,
+.suporte label {
+  cursor: pointer;
+  user-select: none;
+}
+
+#geral,
+#suporte {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  width: 17px;
+  height: 17px;
+  accent-color: #0c7d69;
+}
+
+#mensagem {
+  resize: none;
+  border: 1.7px solid #87a3a6;
+  color: #2b4246;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  width: 100%;
+  height: 100px;
+  margin-top: 16px;
+  padding: 12px 16px;
+  outline-color: #0c7d69;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2b4246;
+  margin-top: 32px;
+}
+
+.checkbox label {
+  cursor: pointer;
+}
+
+#checkbox {
+  margin-right: 16px;
+  margin-left: 2px;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  accent-color: #0c7d69;
+}
+
+#btn {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 32px;
+  padding: 14px 0;
+  color: #ffffff;
+  background-color: #0c7d69;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#nomeErro,
+#sobrenomeErro,
+#emailErro,
+#selecaoErro,
+#mensagemErro,
+#checkboxErro,
+#email-invalido {
+  display: none;
+  color: #d73c3c;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 556px) {
+  form {
+    margin: 0 16px;
+  }
+
+  #mensagemSucesso {
+    margin: 0 16px;
+  }
+
+  .nomes {
+    display: block;
+  }
+
+  .nome,
+  .sobrenome,
+  .geral,
+  .suporte {
+    width: 100%;
+  }
+
+  .nome {
+    margin-bottom: 20px;
+  }
+
+  .selecao {
+    display: block;
+  }
+
+  .geral {
+    margin-bottom: 18px;
+  }
+
+  #mensagem {
+    height: 200px;
+  }
+}
